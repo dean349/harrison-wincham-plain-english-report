@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -583,6 +583,64 @@ nav{
   overflow:hidden;margin-bottom:24px;
   overflow-x:auto;
 }
+/* ── vtable — mobile-first card stack ── */
+.vtable-cards{display:flex;flex-direction:column;gap:12px;padding:4px 0}
+.vtable-card{
+  background:rgba(20,22,34,0.92);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  grid-template-rows:auto auto;
+  gap:6px 12px;
+  align-items:start;
+}
+.vtable-card-label{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.88rem;font-weight:700;
+  color:var(--text-primary);
+  grid-column:1;grid-row:1;
+}
+.vtable-card-amount{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:1.1rem;font-weight:800;
+  white-space:nowrap;
+  grid-column:2;grid-row:1;
+  text-align:right;
+}
+.vtable-card-desc{
+  font-size:.82rem;line-height:1.55;
+  color:var(--text-secondary);
+  grid-column:1 / -1;grid-row:2;
+}
+/* Full table — hidden on mobile, shown on tablet+ */
+.vtable-desktop{display:none}
+@media(min-width:640px){
+  .vtable-cards{display:none}
+  .vtable-desktop{display:table;width:100%;border-collapse:collapse}
+  .vtable-desktop thead{background:rgba(20,22,34,0.98)}
+  .vtable-desktop th{
+    padding:12px 20px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:.64rem;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;
+    color:var(--text-muted);text-align:left;
+    border-bottom:1px solid var(--border);
+  }
+  .vtable-desktop td{
+    padding:13px 20px;font-size:.84rem;
+    border-bottom:1px solid rgba(255,255,255,0.03);
+    vertical-align:middle;color:var(--text-secondary);
+    white-space:nowrap;
+  }
+  .vtable-desktop td:last-child{white-space:normal}
+  .vtable-desktop tr:last-child td{border-bottom:none}
+  .vtable-desktop tbody tr{transition:background 130ms ease}
+  .vtable-desktop tbody tr:hover td{background:rgba(59,130,246,0.04)}
+  .vtable-desktop td strong,.vtable-desktop td b{color:var(--text-primary)}
+}
+/* Legacy .vtable for other tables (keeps overflow scroll) */
 .vtable{width:100%;border-collapse:collapse;min-width:480px}
 .vtable thead{background:rgba(20,22,34,0.98)}
 .vtable th{
@@ -597,7 +655,9 @@ nav{
   padding:13px 20px;font-size:.84rem;
   border-bottom:1px solid rgba(255,255,255,0.03);
   vertical-align:middle;color:var(--text-secondary);
+  white-space:nowrap;
 }
+.vtable td:last-child{white-space:normal}
 .vtable tr:last-child td{border-bottom:none}
 .vtable tbody tr{transition:background 130ms ease}
 .vtable tbody tr:hover td{background:rgba(59,130,246,0.04)}
@@ -975,7 +1035,7 @@ footer p{font-size:.78rem;color:var(--text-muted);line-height:1.85;max-width:720
 
   <!-- Background image — Papagayo Bay, switchable via picker -->
   <img class="hero-bg-img" id="hero-bg"
-       src="./images/papagayo.jpg"
+       src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Papagayo.jpg"
        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&auto=format&fit=crop&q=80'"
        alt="Papagayo Bay, Lanzarote — Los Romeros Ltd case background">
   <div class="hero-bg-overlay"></div>
@@ -1033,28 +1093,28 @@ footer p{font-size:.78rem;color:var(--text-muted);line-height:1.85;max-width:720
 
   <!-- Image Picker Strip -->
   <div class="img-picker" role="group" aria-label="Hero background image selector">
-    <div class="img-thumb active" onclick="setHero(this,'./images/papagayo.jpg')" title="Papagayo Bay">
-      <img src="./images/papagayo.jpg"
+    <div class="img-thumb active" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Papagayo.jpg')" title="Papagayo Bay">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Papagayo.jpg"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=160&auto=format&fit=crop&q=60'" alt="Papagayo Bay"/>
     </div>
-    <div class="img-thumb" onclick="setHero(this,'./images/playa-blanca-2.jpg')" title="Playa Blanca 2">
-      <img src="./images/playa-blanca-2.jpg"
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 2.jpg')" title="Playa Blanca 2">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 2.jpg"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=160&auto=format&fit=crop&q=60'" alt="Playa Blanca"/>
     </div>
-    <div class="img-thumb" onclick="setHero(this,'./images/playa-blanca-3.jpg')" title="Playa Blanca 3">
-      <img src="./images/playa-blanca-3.jpg"
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 3.jpg')" title="Playa Blanca 3">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 3.jpg"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534008897995-27a23e859048?w=160&auto=format&fit=crop&q=60'" alt="Playa Blanca"/>
     </div>
-    <div class="img-thumb" onclick="setHero(this,'./images/marina-rubicon-lanzarote.jpg')" title="Marina Rubicón">
-      <img src="./images/marina-rubicon-lanzarote.jpg"
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/marina rubicon, lanzarote.jpg')" title="Marina Rubicón">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/marina rubicon, lanzarote.jpg"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587474260584-136574528ed5?w=160&auto=format&fit=crop&q=60'" alt="Marina Rubicón"/>
     </div>
-    <div class="img-thumb" onclick="setHero(this,'./images/montana-roja.jpg')" title="Montaña Roja">
-      <img src="./images/montana-roja.jpg"
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/montana-roja-algo-que-ver-en-playa-blanca.jpg')" title="Montaña Roja">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/montana-roja-algo-que-ver-en-playa-blanca.jpg"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=160&auto=format&fit=crop&q=60'" alt="Montaña Roja"/>
     </div>
-    <div class="img-thumb" onclick="setHero(this,'./images/playa-blanca-coast.jpg')" title="Playa Blanca Coast">
-      <img src="./images/playa-blanca-coast.jpg"
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Playa-Blanca-Lanzarote-Islas-Canarias.jpg')" title="Playa Blanca Coast">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Playa-Blanca-Lanzarote-Islas-Canarias.jpg"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?w=160&auto=format&fit=crop&q=60'" alt="Playa Blanca Coast"/>
     </div>
   </div>
@@ -1377,8 +1437,22 @@ footer p{font-size:.78rem;color:var(--text-muted);line-height:1.85;max-width:720
   </div>
   <div class="sec-rule"></div>
 
+  <!-- Mobile card view -->
+  <div class="vtable-cards">
+    <div class="vtable-card">
+      <div class="vtable-card-label">The inherited DLA (Wincham's)</div>
+      <div class="vtable-card-amount td-gold">£37,652</div>
+      <div class="vtable-card-desc">A debt the company supposedly owed to the outgoing Wincham-connected director. You took this on when you bought the company.</div>
+    </div>
+    <div class="vtable-card">
+      <div class="vtable-card-label">Your DLA (Phil's)</div>
+      <div class="vtable-card-amount td-azure">£25,069</div>
+      <div class="vtable-card-desc">A debt the company owes <em>to you</em> — money you personally paid for company expenses out of your own pocket during your ownership.</div>
+    </div>
+  </div>
+  <!-- Desktop table view -->
   <div class="table-wrap">
-    <table class="vtable">
+    <table class="vtable-desktop">
       <thead>
         <tr>
           <th>DLA</th>
@@ -1698,5 +1772,3 @@ document.querySelectorAll('.metric-card,.feature-card,.callout,.action-card,.tl-
 
 </body>
 </html>
-
-
