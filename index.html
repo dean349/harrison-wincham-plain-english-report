@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Los Romeros Ltd — Ownership History and Director Loans Explained</title>
+<meta name="description" content="A plain-English forensic explanation of the Los Romeros Limited ownership history, Director's Loan accounts, and the failures of Wincham International. Prepared for Philip Harrison in contemplation of legal proceedings, April 2026."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   VELYON CLIENT DESIGN SYSTEM v3.0 — Aurora Edition
+   Applied to: Los Romeros Ltd — Ownership History & Director Loans
+   ═══════════════════════════════════════════════════════════════════════ */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  /* Palette */
+  --obsidian:#060810;
+  --graphite:#0D0F1A;
+  --surface:#141622;
+  --card:#1A1C28;
+  --card-raised:#20222E;
+  --border:rgba(255,255,255,0.07);
+  --border-cyan:rgba(0,240,255,0.25);
+  --border-azure:rgba(59,130,246,0.28);
+  --border-gold:rgba(234,179,8,0.3);
+  --border-crimson:rgba(239,68,68,0.3);
+  /* Accent colours */
+  --azure:#3B82F6;
+  --azure-glow:rgba(59,130,246,0.22);
+  --cyan:#00F0FF;
+  --cyan-glow:rgba(0,240,255,0.18);
+  --gold:#EAB308;
+  --gold-glow:rgba(234,179,8,0.18);
+  --crimson:#EF4444;
+  --crimson-glow:rgba(239,68,68,0.18);
+  --emerald:#10B981;
+  /* Text */
+  --text-primary:#F0F2FF;
+  --text-secondary:#A8AABF;
+  --text-muted:#565870;
+  /* Radii */
+  --r-sm:8px; --r:14px; --r-lg:20px; --r-xl:28px;
+  /* Shadows */
+  --shadow-card:0 4px 32px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04);
+  --shadow-azure:0 8px 40px rgba(59,130,246,0.28);
+  --shadow-cyan:0 8px 40px rgba(0,240,255,0.22);
+  --shadow-gold:0 8px 40px rgba(234,179,8,0.2);
+  --shadow-crimson:0 8px 40px rgba(239,68,68,0.2);
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--obsidian);
+  color:var(--text-primary);
+  min-height:100vh;
+  line-height:1.75;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  /* Prevent text from being too wide on very small screens */
+  word-break:break-word;
+}
+
+/* ── AURORA FIELD ─────────────────────────────────────────────────── */
+.aurora-field{
+  position:fixed;inset:0;
+  pointer-events:none;z-index:0;
+  overflow:hidden;
+}
+.aurora-blob{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(88px);
+  opacity:0;
+  animation:auroraFloat 18s ease-in-out infinite;
+}
+.aurora-blob.a1{
+  width:820px;height:580px;
+  top:-15%;left:-12%;
+  background:radial-gradient(ellipse,rgba(59,130,246,0.32) 0%,transparent 70%);
+  animation-delay:0s;animation-duration:22s;
+}
+.aurora-blob.a2{
+  width:700px;height:700px;
+  top:30%;right:-18%;
+  background:radial-gradient(ellipse,rgba(0,240,255,0.22) 0%,transparent 70%);
+  animation-delay:-7s;animation-duration:19s;
+}
+.aurora-blob.a3{
+  width:600px;height:480px;
+  bottom:10%;left:20%;
+  background:radial-gradient(ellipse,rgba(59,130,246,0.18) 0%,transparent 70%);
+  animation-delay:-13s;animation-duration:25s;
+}
+.aurora-blob.a4{
+  width:500px;height:500px;
+  top:55%;right:30%;
+  background:radial-gradient(ellipse,rgba(0,240,255,0.14) 0%,transparent 70%);
+  animation-delay:-4s;animation-duration:17s;
+}
+@keyframes auroraFloat{
+  0%{opacity:0;transform:translateY(0) scale(1)}
+  15%{opacity:1}
+  50%{transform:translateY(-40px) scale(1.07)}
+  85%{opacity:1}
+  100%{opacity:0;transform:translateY(0) scale(1)}
+}
+
+/* ── SCROLLBAR ────────────────────────────────────────────────────── */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--obsidian)}
+::-webkit-scrollbar-thumb{background:var(--surface);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--card-raised)}
+
+/* ── NAV ──────────────────────────────────────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:56px;
+  background:rgba(6,8,16,0.92);
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{
+  max-width:1240px;margin:0 auto;
+  height:100%;padding:0 18px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-logo{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;font-size:.82rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  background:linear-gradient(135deg,var(--azure),var(--cyan));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.nav-divider{
+  width:1px;height:18px;background:var(--border);flex-shrink:0;
+  display:none; /* hidden on mobile */
+}
+.nav-client{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.62rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-muted);
+  display:none; /* hidden on mobile */
+}
+/* Mobile: nav links hidden, shown via hamburger */
+.nav-links{
+  display:none;
+  flex-direction:column;
+  gap:0;
+  list-style:none;
+  position:fixed;
+  top:56px;left:0;right:0;
+  background:rgba(6,8,16,0.97);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+  padding:12px 0 20px;
+  z-index:999;
+}
+.nav-links.open{display:flex}
+.nav-links li a{
+  display:block;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.82rem;font-weight:500;
+  letter-spacing:.03em;
+  color:var(--text-secondary);
+  text-decoration:none;
+  padding:12px 24px;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  transition:color 180ms ease,background 150ms;
+}
+.nav-links li:last-child a{border-bottom:none}
+.nav-links li a:hover{color:var(--text-primary);background:rgba(59,130,246,0.05)}
+/* Hamburger button */
+.nav-hamburger{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  width:36px;height:36px;
+  align-items:center;justify-content:center;
+  cursor:pointer;
+  background:none;border:none;
+  padding:6px;
+  border-radius:var(--r-sm);
+  transition:background 150ms;
+}
+.nav-hamburger:hover{background:rgba(255,255,255,0.06)}
+.nav-hamburger span{
+  display:block;
+  width:20px;height:2px;
+  background:var(--text-secondary);
+  border-radius:2px;
+  transition:transform 220ms ease,opacity 220ms ease;
+}
+.nav-hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.active span:nth-child(2){opacity:0}
+.nav-hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-badge{
+  display:flex;align-items:center;gap:6px;
+  background:rgba(239,68,68,0.1);
+  border:1px solid rgba(239,68,68,0.3);
+  border-radius:999px;
+  padding:4px 10px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.6rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:#fca5a5;
+  white-space:nowrap;
+}
+.nav-badge-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--crimson);
+  box-shadow:0 0 7px var(--crimson);
+  animation:blink 2.2s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.25}}
+/* Tablet+ nav: show inline links, hide hamburger */
+@media(min-width:700px){
+  .nav-inner{padding:0 28px}
+  .nav-divider,.nav-client{display:block}
+  .nav-hamburger{display:none}
+  .nav-links{
+    display:flex;
+    flex-direction:row;
+    gap:22px;
+    position:static;
+    background:none;
+    border:none;
+    padding:0;
+    backdrop-filter:none;
+  }
+  .nav-links li a{
+    display:inline;
+    padding:0;
+    border:none;
+    font-size:.74rem;
+  }
+  .nav-links li a:hover{background:none}
+}
+@media(min-width:1024px){.nav-inner{padding:0 32px}}
+
+/* ── HERO ─────────────────────────────────────────────────────────── */
+.hero{
+  position:relative;z-index:2;
+  min-height:100svh;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  overflow:hidden;
+  /* Mobile: tighter side padding, nav offset */
+  padding:56px 16px 0;
+}
+@media(min-width:480px){.hero{padding:56px 24px 0}}
+@media(min-width:700px){.hero{padding:56px 32px 0}}
+.hero-bg-img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 45%;
+  z-index:0;
+  filter:brightness(0.55) saturate(1.4);
+  transition:opacity 600ms ease;
+}
+.hero-bg-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(to bottom,
+      rgba(6,8,16,0.55) 0%,
+      rgba(6,8,16,0.15) 30%,
+      rgba(6,8,16,0.30) 65%,
+      rgba(6,8,16,0.88) 100%),
+    radial-gradient(ellipse 75% 55% at 50% 0%,rgba(59,130,246,0.15),transparent);
+}
+.hero-content{
+  position:relative;z-index:3;
+  text-align:center;
+  max-width:980px;
+  padding-bottom:100px;
+}
+/* Eyebrow pill */
+.hero-pill{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(239,68,68,0.12);
+  border:1px solid rgba(239,68,68,0.38);
+  border-radius:999px;
+  padding:7px 20px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.68rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:#fca5a5;
+  margin-bottom:30px;
+}
+.hero-pill-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--crimson);
+  box-shadow:0 0 8px var(--crimson);
+  animation:blink 2.2s ease-in-out infinite;
+}
+.hero h1{
+  font-family:'Space Grotesk',sans-serif;
+  /* Mobile-first: start at 2rem, scale up via vw, cap at 4.6rem */
+  font-size:clamp(2rem,6.5vw,4.6rem);
+  font-weight:700;
+  line-height:1.1;
+  letter-spacing:-.02em;
+  color:var(--text-primary);
+  margin-bottom:16px;
+}
+@media(min-width:480px){.hero h1{font-size:clamp(2.2rem,6vw,4.6rem);margin-bottom:20px}}
+@media(min-width:700px){.hero h1{line-height:1.07;letter-spacing:-.03em;margin-bottom:22px}}
+.hero h1 .grad-azure{
+  background:linear-gradient(135deg,#60A5FA 0%,var(--cyan) 60%,#BAE6FD 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero h1 .grad-gold{
+  background:linear-gradient(135deg,var(--gold) 0%,#FCD34D 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-sub{
+  font-size:.94rem;font-weight:400;
+  color:var(--text-secondary);
+  max-width:740px;margin:0 auto 28px;
+  line-height:1.8;
+}
+@media(min-width:480px){.hero-sub{font-size:1rem;margin-bottom:32px}}
+@media(min-width:700px){.hero-sub{font-size:1.1rem;margin-bottom:40px}}
+@media(min-width:1024px){.hero-sub{font-size:1.18rem;margin-bottom:44px}}
+.hero-meta{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:8px;
+  margin-bottom:24px;
+}
+@media(min-width:700px){.hero-meta{gap:10px;margin-bottom:36px}}
+@media(min-width:1024px){.hero-meta{margin-bottom:40px}}
+.hero-meta-chip{
+  display:flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:var(--r-sm);
+  /* Touch-friendly padding */
+  padding:8px 13px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.72rem;color:var(--text-secondary);
+}
+@media(min-width:700px){.hero-meta-chip{font-size:.78rem;padding:7px 16px}}
+.hero-meta-chip span{color:var(--text-primary);font-weight:600}
+
+/* Hero Key Figures Strip — 2×2 on mobile, 4×1 on tablet+ */
+.hero-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  width:100%;max-width:820px;margin:0 auto;
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:var(--r);
+  overflow:hidden;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
+  box-shadow:0 8px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.07);
+}
+@media(min-width:700px){
+  .hero-stats{
+    grid-template-columns:repeat(4,1fr);
+    border-radius:var(--r-lg);
+  }
+}
+.hero-stat{
+  background:transparent;
+  padding:16px 10px;
+  text-align:center;position:relative;
+}
+@media(min-width:480px){.hero-stat{padding:20px 12px}}
+@media(min-width:700px){.hero-stat{padding:22px 14px}}
+.hero-stat+.hero-stat::before{
+  content:'';
+  position:absolute;left:0;top:20%;height:60%;width:1px;
+  background:rgba(255,255,255,0.08);
+}
+.hero-stat-n{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:1.5rem;font-weight:700;
+  display:block;margin-bottom:4px;
+}
+@media(min-width:480px){.hero-stat-n{font-size:1.75rem}}
+@media(min-width:700px){.hero-stat-n{font-size:2rem;margin-bottom:6px}}
+.hero-stat-n.azure{
+  background:linear-gradient(135deg,#60c4ff,var(--cyan));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 0 10px rgba(0,240,255,0.3));
+}
+.hero-stat-n.gold{
+  background:linear-gradient(135deg,var(--gold),#FCD34D);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 0 10px rgba(234,179,8,0.3));
+}
+.hero-stat-n.crimson{
+  background:linear-gradient(135deg,#EF4444,#F97316);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 0 10px rgba(239,68,68,0.35));
+}
+.hero-stat-n.cyan{
+  background:linear-gradient(135deg,var(--azure),var(--cyan));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-stat-l{
+  font-size:.72rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;
+  color:rgba(230,232,255,0.82);
+  line-height:1.45;
+}
+
+/* ── IMAGE PICKER STRIP ───────────────────────────────────────────── */
+.img-picker{
+  position:absolute;bottom:0;left:0;right:0;z-index:4;
+  display:flex;align-items:flex-end;justify-content:center;
+  gap:5px;padding:0 16px 16px;
+  overflow-x:auto;
+  /* Hide scrollbar on mobile */
+  scrollbar-width:none;
+}
+.img-picker::-webkit-scrollbar{display:none}
+@media(min-width:480px){.img-picker{gap:6px;padding:0 0 20px}}
+.img-thumb{
+  /* Smaller on mobile for touch scroll */
+  width:52px;height:34px;
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  cursor:pointer;
+  border:2px solid transparent;
+  transition:border-color 220ms ease, transform 220ms ease, opacity 220ms ease;
+  opacity:0.6;
+  flex-shrink:0;
+}
+@media(min-width:480px){.img-thumb{width:62px;height:40px}}
+@media(min-width:700px){.img-thumb{width:72px;height:46px}}
+.img-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.img-thumb:hover,.img-thumb:focus{opacity:0.85;transform:translateY(-2px)}
+.img-thumb.active{
+  border-color:var(--cyan);
+  opacity:1;
+  box-shadow:0 0 12px rgba(0,240,255,0.45);
+}
+
+/* SCROLL INDICATOR — hide on very small screens to reduce clutter */
+.scroll-indicator{
+  position:absolute;bottom:60px;left:50%;transform:translateX(-50%);
+  z-index:4;display:none;flex-direction:column;align-items:center;gap:8px;
+}
+@media(min-width:480px){.scroll-indicator{display:flex;bottom:68px}}
+.scroll-indicator span{font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.scroll-mouse{
+  width:20px;height:32px;border:1.5px solid rgba(0,240,255,0.35);
+  border-radius:10px;display:flex;justify-content:center;padding-top:5px;
+}
+.scroll-wheel{
+  width:2px;height:5px;background:var(--cyan);border-radius:2px;
+  animation:scrollWheel 1.9s ease-in-out infinite;
+}
+@keyframes scrollWheel{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(11px)}}
+
+/* ── MAIN WRAP ────────────────────────────────────────────────────── */
+/* Mobile-first: tight padding, expand for larger screens */
+.wrap{
+  position:relative;z-index:2;
+  max-width:1240px;margin:0 auto;
+  padding:0 16px 72px;
+}
+@media(min-width:480px){.wrap{padding:0 20px 90px}}
+@media(min-width:700px){.wrap{padding:0 28px 100px}}
+@media(min-width:1024px){.wrap{padding:0 32px 120px}}
+
+/* ── SECTION HEADER ───────────────────────────────────────────────── */
+/* Mobile: stacked, compact */
+.sec-head{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  margin:56px 0 24px;
+}
+@media(min-width:700px){
+  .sec-head{
+    flex-direction:row;
+    gap:20px;
+    margin:72px 0 30px;
+  }
+}
+@media(min-width:1024px){.sec-head{gap:24px;margin:88px 0 36px}}
+.sec-num{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.7rem;font-weight:600;
+  color:var(--azure);letter-spacing:.1em;
+  padding-top:2px;flex-shrink:0;min-width:32px;
+}
+@media(min-width:700px){.sec-num{padding-top:7px;min-width:42px}}
+.sec-num.gold{color:var(--gold)}
+.sec-num.crimson{color:var(--crimson)}
+.sec-num.cyan{color:var(--cyan)}
+.sec-head-inner h2{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:1.55rem;font-weight:700;
+  letter-spacing:-.015em;color:var(--text-primary);
+  margin-bottom:6px;
+}
+@media(min-width:480px){.sec-head-inner h2{font-size:1.75rem}}
+@media(min-width:700px){.sec-head-inner h2{font-size:1.95rem;letter-spacing:-.02em}}
+@media(min-width:1024px){.sec-head-inner h2{font-size:2.1rem}}
+.sec-head-inner p{
+  font-size:.9rem;color:var(--text-secondary);
+  line-height:1.75;max-width:620px;
+}
+@media(min-width:700px){.sec-head-inner p{font-size:.98rem;line-height:1.85}}
+.sec-rule{
+  height:1px;
+  background:linear-gradient(90deg,rgba(59,130,246,0.65),rgba(59,130,246,0.15),transparent);
+  margin-bottom:28px;
+}
+@media(min-width:700px){.sec-rule{margin-bottom:36px}}
+@media(min-width:1024px){.sec-rule{margin-bottom:44px}}
+.sec-rule.gold{background:linear-gradient(90deg,rgba(234,179,8,0.65),rgba(234,179,8,0.12),transparent)}
+.sec-rule.crimson{background:linear-gradient(90deg,rgba(239,68,68,0.65),rgba(239,68,68,0.12),transparent)}
+.sec-rule.cyan{background:linear-gradient(90deg,rgba(0,240,255,0.55),rgba(0,240,255,0.1),transparent)}
+
+/* ── CALLOUTS ─────────────────────────────────────────────────────── */
+.callout{
+  border-radius:var(--r);
+  padding:18px 18px;
+  position:relative;overflow:hidden;
+  margin-bottom:16px;
+}
+@media(min-width:480px){.callout{padding:20px 22px}}
+@media(min-width:700px){.callout{padding:24px 28px;margin-bottom:20px}}
+.callout-crimson{
+  background:linear-gradient(135deg,rgba(239,68,68,0.16),rgba(239,68,68,0.07));
+  border:1px solid rgba(239,68,68,0.45);
+  box-shadow:inset 0 1px 0 rgba(239,68,68,0.1);
+}
+.callout-gold{
+  background:linear-gradient(135deg,rgba(234,179,8,0.16),rgba(234,179,8,0.07));
+  border:1px solid rgba(234,179,8,0.45);
+  box-shadow:inset 0 1px 0 rgba(234,179,8,0.1);
+}
+.callout-azure{
+  background:linear-gradient(135deg,rgba(59,130,246,0.16),rgba(59,130,246,0.07));
+  border:1px solid rgba(59,130,246,0.45);
+  box-shadow:inset 0 1px 0 rgba(59,130,246,0.1);
+}
+.callout-cyan{
+  background:linear-gradient(135deg,rgba(0,240,255,0.12),rgba(0,240,255,0.05));
+  border:1px solid rgba(0,240,255,0.32);
+  box-shadow:inset 0 1px 0 rgba(0,240,255,0.08);
+}
+.callout-title{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.88rem;font-weight:700;
+  margin-bottom:10px;display:flex;align-items:center;gap:10px;
+}
+.callout-crimson .callout-title{color:#ff8888;font-size:.95rem;text-shadow:0 0 18px rgba(239,68,68,0.4)}
+.callout-gold .callout-title{color:#FCD34D;font-size:.95rem;text-shadow:0 0 16px rgba(234,179,8,0.3)}
+.callout-azure .callout-title{color:#93c5fd;font-size:.95rem}
+.callout-cyan .callout-title{color:#67E8F9;font-size:.95rem}
+.callout-body{font-size:.93rem;color:var(--text-secondary);line-height:1.85}
+.callout-body strong{color:var(--text-primary)}
+.callout-icon{width:17px;height:17px;flex-shrink:0}
+
+/* ── TABLES ───────────────────────────────────────────────────────── */
+.table-wrap{
+  width:100%;border-radius:var(--r);
+  border:1px solid var(--border);
+  overflow:hidden;margin-bottom:24px;
+  overflow-x:auto;
+}
+.vtable{width:100%;border-collapse:collapse;min-width:480px}
+.vtable thead{background:rgba(20,22,34,0.98)}
+.vtable th{
+  padding:12px 20px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.64rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-muted);text-align:left;
+  border-bottom:1px solid var(--border);
+}
+.vtable td{
+  padding:13px 20px;font-size:.84rem;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+  vertical-align:middle;color:var(--text-secondary);
+}
+.vtable tr:last-child td{border-bottom:none}
+.vtable tbody tr{transition:background 130ms ease}
+.vtable tbody tr:hover td{background:rgba(59,130,246,0.04)}
+.vtable td strong,.vtable td b{color:var(--text-primary)}
+.td-azure{color:#93c5fd !important}
+.td-gold{color:#FCD34D !important}
+.td-crimson{color:#fca5a5 !important}
+.td-cyan{color:#67E8F9 !important}
+.td-total{
+  background:rgba(59,130,246,0.09) !important;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+}
+.td-total td{border-top:1px solid rgba(59,130,246,0.28) !important}
+
+/* ── METRIC CARDS ─────────────────────────────────────────────────── */
+/* Mobile: 1 col → 2 col → 3 col */
+.metrics-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+@media(min-width:480px){.metrics-grid{grid-template-columns:1fr 1fr;gap:14px}}
+@media(min-width:900px){.metrics-grid{grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}}
+.metric-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:20px 18px;
+  position:relative;overflow:hidden;
+  transition:border-color 280ms,transform 280ms;
+}
+@media(min-width:700px){.metric-card{padding:26px 24px}}
+.metric-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  opacity:0;transition:opacity 280ms;
+}
+.metric-card:hover{transform:translateY(-3px)}
+.metric-card.azure{border-color:rgba(59,130,246,0.38);background:rgba(59,130,246,0.05)}
+.metric-card.azure::before{background:linear-gradient(90deg,var(--azure),var(--cyan),transparent);opacity:1}
+.metric-card.gold{border-color:rgba(234,179,8,0.38);background:rgba(234,179,8,0.05)}
+.metric-card.gold::before{background:linear-gradient(90deg,var(--gold),#FCD34D,transparent);opacity:1}
+.metric-card.crimson{border-color:rgba(239,68,68,0.38);background:rgba(239,68,68,0.05)}
+.metric-card.crimson::before{background:linear-gradient(90deg,var(--crimson),#F97316,transparent);opacity:1}
+.metric-card.cyan{border-color:rgba(0,240,255,0.28);background:rgba(0,240,255,0.04)}
+.metric-card.cyan::before{background:linear-gradient(90deg,var(--cyan),var(--azure),transparent);opacity:1}
+.mc-label{
+  font-size:.67rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-muted);margin-bottom:10px;
+}
+.mc-value{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2.1rem;font-weight:700;
+  letter-spacing:-.03em;margin-bottom:6px;display:block;
+}
+.mc-value.azure{
+  background:linear-gradient(135deg,var(--azure),var(--cyan));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.mc-value.gold{
+  background:linear-gradient(135deg,#F59E0B,#FCD34D);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 0 8px rgba(234,179,8,0.3));
+}
+.mc-value.crimson{
+  background:linear-gradient(135deg,var(--crimson),#F97316);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 0 8px rgba(239,68,68,0.3));
+}
+.mc-value.cyan{
+  color:var(--cyan);
+  filter:drop-shadow(0 0 8px rgba(0,240,255,0.35));
+}
+.mc-note{font-size:.8rem;color:var(--text-secondary);line-height:1.55}
+
+/* ── FEATURE CARDS ────────────────────────────────────────────────── */
+.feature-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:20px 18px;
+  position:relative;overflow:hidden;
+  transition:border-color 280ms,transform 280ms,box-shadow 280ms;
+}
+@media(min-width:700px){.feature-card{padding:28px}}
+.feature-card:hover{
+  border-color:var(--border-azure);
+  transform:translateY(-3px);
+  box-shadow:0 12px 36px rgba(59,130,246,0.1);
+}
+.feature-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(59,130,246,0.4),transparent);
+  opacity:0;transition:opacity 280ms;
+}
+.feature-card:hover::before{opacity:1}
+.feature-card.gold-card{border-color:rgba(234,179,8,0.15)}
+.feature-card.gold-card:hover{border-color:rgba(234,179,8,0.38);box-shadow:0 12px 36px rgba(234,179,8,0.08)}
+.feature-card.gold-card::before{background:linear-gradient(90deg,transparent,rgba(234,179,8,0.35),transparent)}
+.feature-card.crimson-card{border-color:rgba(239,68,68,0.15)}
+.feature-card.crimson-card:hover{border-color:rgba(239,68,68,0.38);box-shadow:0 12px 36px rgba(239,68,68,0.08)}
+.feature-card.crimson-card::before{background:linear-gradient(90deg,transparent,rgba(239,68,68,0.35),transparent)}
+.fc-icon{
+  width:42px;height:42px;border-radius:10px;
+  background:rgba(59,130,246,0.1);
+  border:1px solid rgba(59,130,246,0.2);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:16px;
+}
+.fc-icon svg{width:19px;height:19px;color:var(--azure)}
+.fc-icon.gold-icon{background:rgba(234,179,8,0.1);border-color:rgba(234,179,8,0.2)}
+.fc-icon.gold-icon svg{color:var(--gold)}
+.fc-icon.crimson-icon{background:rgba(239,68,68,0.1);border-color:rgba(239,68,68,0.2)}
+.fc-icon.crimson-icon svg{color:var(--crimson)}
+.fc-icon.cyan-icon{background:rgba(0,240,255,0.08);border-color:rgba(0,240,255,0.2)}
+.fc-icon.cyan-icon svg{color:var(--cyan)}
+.fc-title{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:1rem;font-weight:600;
+  color:var(--text-primary);margin-bottom:9px;
+}
+.fc-body{font-size:.85rem;color:var(--text-secondary);line-height:1.78}
+
+/* ── LAYOUT HELPERS ─── mobile-first: 1 col default ─────────────── */
+.grid-2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:600px){.grid-2{grid-template-columns:1fr 1fr;gap:18px}}
+.grid-3{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:600px){.grid-3{grid-template-columns:1fr 1fr;gap:16px}}
+@media(min-width:900px){.grid-3{grid-template-columns:1fr 1fr 1fr}}
+body-text{font-size:.96rem;color:var(--text-secondary);line-height:1.85;margin-bottom:18px}
+
+/* ── DLA DIAGRAM ──────────────────────────────────────────────────── */
+.dla-diagram{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  /* Mobile: column layout */
+  padding:22px 18px;
+  margin-bottom:24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+@media(min-width:600px){
+  .dla-diagram{
+    flex-direction:row;
+    gap:0;
+    padding:36px 40px;
+  }
+}
+.dla-box{
+  text-align:center;padding:16px 20px;
+  border-radius:var(--r);
+  background:var(--surface);
+  border:1px solid var(--border);
+  min-width:140px;
+  width:100%;
+}
+@media(min-width:600px){.dla-box{width:auto;min-width:160px;padding:18px 24px}}
+.dla-box.highlight-azure{border-color:rgba(59,130,246,0.45);background:rgba(59,130,246,0.07)}
+.dla-box.highlight-gold{border-color:rgba(234,179,8,0.45);background:rgba(234,179,8,0.06)}
+.dla-box.highlight-neutral{border-color:rgba(255,255,255,0.12)}
+.dla-box-label{font-size:.65rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px}
+.dla-box-value{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:700;color:var(--text-primary)}
+.dla-box-value.azure{color:var(--azure)}
+.dla-box-value.gold{color:var(--gold)}
+.dla-arrow{
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 16px;color:var(--text-muted);font-size:.7rem;
+  letter-spacing:.07em;
+}
+.dla-arrow svg{width:22px;height:22px;color:var(--azure);margin-bottom:4px}
+
+/* ── OWNERSHIP CHAIN DIAGRAM ──────────────────────────────────────── */
+.chain{
+  display:flex;flex-direction:column;align-items:center;gap:0;
+  margin:20px 0;
+}
+.chain-node{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  /* Mobile: full width, smaller padding */
+  padding:14px 20px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.88rem;font-weight:600;
+  color:var(--text-primary);
+  text-align:center;
+  width:100%;max-width:340px;position:relative;
+}
+@media(min-width:480px){.chain-node{padding:16px 28px;font-size:.9rem;min-width:240px;width:auto}}
+.chain-node.azure-node{border-color:rgba(59,130,246,0.45);background:rgba(59,130,246,0.07)}
+.chain-node.gold-node{border-color:rgba(234,179,8,0.45);background:rgba(234,179,8,0.06)}
+.chain-node.neutral-node{border-color:rgba(255,255,255,0.1)}
+.chain-arrow{
+  width:1px;height:32px;background:var(--border-azure);
+  position:relative;display:flex;align-items:flex-end;justify-content:center;
+}
+.chain-arrow::after{
+  content:'▼';font-size:.55rem;color:var(--azure);
+  position:absolute;bottom:-2px;
+}
+.chain-label{font-size:.7rem;font-weight:500;color:var(--text-muted);margin-top:4px}
+
+/* ── TIMELINE ─────────────────────────────────────────────────────── */
+.timeline{display:flex;flex-direction:column;gap:0;margin:20px 0;position:relative}
+.timeline::before{
+  content:'';position:absolute;left:22px;top:0;bottom:0;width:1px;
+  background:linear-gradient(to bottom,rgba(59,130,246,0.4),rgba(59,130,246,0.1));
+}
+.tl-item{display:flex;gap:20px;padding-bottom:28px;position:relative}
+.tl-dot{
+  width:14px;height:14px;border-radius:50%;
+  background:var(--azure);border:2px solid var(--obsidian);
+  flex-shrink:0;margin-top:5px;position:relative;z-index:1;
+  box-shadow:0 0 12px rgba(59,130,246,0.5);
+}
+.tl-dot.gold{background:var(--gold);box-shadow:0 0 12px rgba(234,179,8,0.45)}
+.tl-dot.crimson{background:var(--crimson);box-shadow:0 0 12px rgba(239,68,68,0.45)}
+.tl-dot.cyan{background:var(--cyan);box-shadow:0 0 12px rgba(0,240,255,0.45)}
+.tl-content{flex:1}
+.tl-date{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.68rem;font-weight:600;
+  color:var(--azure);letter-spacing:.08em;
+  margin-bottom:4px;
+}
+.tl-date.gold{color:var(--gold)}
+.tl-date.crimson{color:var(--crimson)}
+.tl-date.cyan{color:var(--cyan)}
+.tl-title{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.92rem;font-weight:600;
+  color:var(--text-primary);margin-bottom:5px;
+}
+.tl-body{font-size:.84rem;color:var(--text-secondary);line-height:1.78}
+
+/* ── ACTION PRIORITY ──────────────────────────────────────────────── */
+.action-card{
+  border-radius:var(--r);
+  padding:16px 16px;
+  margin-bottom:12px;
+  display:flex;gap:14px;align-items:flex-start;
+  border:1px solid var(--border);
+  background:var(--card);
+  transition:transform 220ms,border-color 220ms;
+}
+@media(min-width:480px){.action-card{padding:18px 20px;gap:16px}}
+@media(min-width:700px){.action-card{padding:22px 26px;gap:18px;margin-bottom:14px}}
+.action-card:hover{transform:translateX(4px)}
+.action-num{
+  width:38px;height:38px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.86rem;font-weight:700;
+}
+.action-num.urgent{background:rgba(239,68,68,0.15);color:#fca5a5;border:1px solid rgba(239,68,68,0.35)}
+.action-num.near{background:rgba(234,179,8,0.15);color:#FCD34D;border:1px solid rgba(234,179,8,0.35)}
+.action-num.plan{background:rgba(59,130,246,0.12);color:#93c5fd;border:1px solid rgba(59,130,246,0.3)}
+.action-body{}
+.action-title{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.9rem;font-weight:600;color:var(--text-primary);margin-bottom:5px;
+}
+.action-detail{font-size:.83rem;color:var(--text-secondary);line-height:1.75}
+.action-detail strong{color:var(--text-primary)}
+.action-deadline{
+  display:inline-block;margin-top:7px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.66rem;font-weight:600;letter-spacing:.07em;
+  padding:3px 10px;border-radius:999px;
+}
+.deadline-urgent{background:rgba(239,68,68,0.15);color:#fca5a5;border:1px solid rgba(239,68,68,0.3)}
+.deadline-near{background:rgba(234,179,8,0.15);color:#FCD34D;border:1px solid rgba(234,179,8,0.3)}
+.deadline-plan{background:rgba(59,130,246,0.12);color:#93c5fd;border:1px solid rgba(59,130,246,0.25)}
+
+/* ── CONFIDENCE NOTE ──────────────────────────────────────────────── */
+.confidence-bar{
+  height:4px;border-radius:2px;margin-bottom:6px;margin-top:-2px;
+  background:linear-gradient(90deg,var(--cyan),var(--azure));
+  width:72%;
+}
+
+/* ── FOOTER ───────────────────────────────────────────────────────── */
+footer{
+  position:relative;z-index:2;
+  text-align:center;
+  padding:40px 20px 36px;
+  border-top:1px solid var(--border);
+  background:var(--graphite);
+}
+@media(min-width:700px){footer{padding:56px 32px 44px}}
+.f-brand{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;font-size:.88rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.f-brand .v-blue{color:var(--azure)}
+.f-brand .v-cyan{color:var(--cyan)}
+footer p{font-size:.78rem;color:var(--text-muted);line-height:1.85;max-width:720px;margin:0 auto 6px}
+.priv-notice{
+  margin-top:20px;
+  background:rgba(239,68,68,0.07);
+  border:1px solid rgba(239,68,68,0.2);
+  border-radius:var(--r);
+  padding:16px 20px;
+  max-width:840px;margin:20px auto 0;
+  font-size:.76rem;color:rgba(252,165,165,0.8);line-height:1.75;
+  font-style:italic;
+}
+
+/* ── FADE ANIMATION ───────────────────────────────────────────────── */
+.fade-up{opacity:0;transform:translateY(20px);animation:fadeUp 0.65s ease forwards}
+.fade-up:nth-child(1){animation-delay:.05s}
+.fade-up:nth-child(2){animation-delay:.15s}
+.fade-up:nth-child(3){animation-delay:.25s}
+.fade-up:nth-child(4){animation-delay:.35s}
+.fade-up:nth-child(5){animation-delay:.45s}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+
+/* ── PROSE BODY TEXT ──────────────────────────────────────────────── */
+.prose{font-size:.96rem;color:var(--text-secondary);line-height:1.85}
+.prose p{margin-bottom:16px}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--text-primary)}
+
+/* ── REDUCED MOTION ───────────────────────────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:0.01ms !important;transition-duration:0.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ AURORA FIELD ═══════════ -->
+<div class="aurora-field">
+  <div class="aurora-blob a1"></div>
+  <div class="aurora-blob a2"></div>
+  <div class="aurora-blob a3"></div>
+  <div class="aurora-blob a4"></div>
+</div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="nav-logo">VELYON</span>
+      <div class="nav-divider"></div>
+      <span class="nav-client">Los Romeros Ltd — Case Files</span>
+    </div>
+    <!-- Mobile hamburger -->
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#overview" onclick="closeNav()">Overview</a></li>
+      <li><a href="#ownership" onclick="closeNav()">Ownership</a></li>
+      <li><a href="#dla" onclick="closeNav()">Director Loans</a></li>
+      <li><a href="#sale" onclick="closeNav()">The Sale</a></li>
+      <li><a href="#failures" onclick="closeNav()">Failures</a></li>
+      <li><a href="#next-steps" onclick="closeNav()">Next Steps</a></li>
+    </ul>
+    <div class="nav-badge">
+      <div class="nav-badge-dot"></div>
+      Litigation Privilege
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="top">
+
+  <!-- Background image — Papagayo Bay, switchable via picker -->
+  <img class="hero-bg-img" id="hero-bg"
+       src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Papagayo.jpg"
+       onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&auto=format&fit=crop&q=80'"
+       alt="Papagayo Bay, Lanzarote — Los Romeros Ltd case background">
+  <div class="hero-bg-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-pill fade-up">
+      <div class="hero-pill-dot"></div>
+      Forensic Audit Report &nbsp;·&nbsp; Private &amp; Confidential · April 2026
+    </div>
+
+    <h1 class="fade-up">
+      Los Romeros Ltd<br/>
+      <span class="grad-azure">Ownership History</span> &amp;<br/>
+      <span class="grad-gold">Director Loans</span> Explained
+    </h1>
+
+    <p class="hero-sub fade-up">
+      A plain-English forensic explanation prepared personally for <strong style="color:var(--text-primary)">Philip Harrison</strong> — covering the full history of the Wincham property scheme, how the Director's Loan accounts work, and what went wrong.
+    </p>
+
+    <div class="hero-meta fade-up">
+      <div class="hero-meta-chip">Prepared for: <span>Philip Harrison</span></div>
+      <div class="hero-meta-chip">Property: <span>85 Shangrila Park, Playa Blanca</span></div>
+      <div class="hero-meta-chip">Company: <span>Los Romeros Limited (06993349)</span></div>
+      <div class="hero-meta-chip">Status: <span style="color:#fca5a5">Litigation Privilege</span></div>
+    </div>
+
+    <div class="hero-stats fade-up">
+      <div class="hero-stat">
+        <span class="hero-stat-n crimson">£25,069</span>
+        <span class="hero-stat-l">Phil's DLA<br/>Owed Back to You</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-n gold">£37,652</span>
+        <span class="hero-stat-l">Inherited DLA<br/>Taken On at Purchase</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-n azure">€56,164</span>
+        <span class="hero-stat-l">Paper Inflation<br/>of Villa Value</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-n cyan">6</span>
+        <span class="hero-stat-l">Failures by<br/>Wincham Identified</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll to read</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+
+  <!-- Image Picker Strip -->
+  <div class="img-picker" role="group" aria-label="Hero background image selector">
+    <div class="img-thumb active" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Papagayo.jpg')" title="Papagayo Bay">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Papagayo.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=160&auto=format&fit=crop&q=60'" alt="Papagayo Bay"/>
+    </div>
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 2.jpg')" title="Playa Blanca 2">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 2.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=160&auto=format&fit=crop&q=60'" alt="Playa Blanca"/>
+    </div>
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 3.jpg')" title="Playa Blanca 3">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/PLAYA BLANCA IMAGE - 3.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534008897995-27a23e859048?w=160&auto=format&fit=crop&q=60'" alt="Playa Blanca"/>
+    </div>
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/marina rubicon, lanzarote.jpg')" title="Marina Rubicón">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/marina rubicon, lanzarote.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587474260584-136574528ed5?w=160&auto=format&fit=crop&q=60'" alt="Marina Rubicón"/>
+    </div>
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/montana-roja-algo-que-ver-en-playa-blanca.jpg')" title="Montaña Roja">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/montana-roja-algo-que-ver-en-playa-blanca.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=160&auto=format&fit=crop&q=60'" alt="Montaña Roja"/>
+    </div>
+    <div class="img-thumb" onclick="setHero(this,'../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Playa-Blanca-Lanzarote-Islas-Canarias.jpg')" title="Playa Blanca Coast">
+      <img src="../../../../../../VELYON - LEGAL COMMAND CENTER/Shangrila Park - images/PLAYA BLANCA IMAGES/Playa-Blanca-Lanzarote-Islas-Canarias.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?w=160&auto=format&fit=crop&q=60'" alt="Playa Blanca Coast"/>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════ MAIN CONTENT ═══════════ -->
+<div class="wrap">
+
+  <!-- ═══ 0 — A NOTE BEFORE YOU READ ═══ -->
+  <div id="overview">
+    <div class="callout callout-cyan" style="margin-top:60px">
+      <div class="callout-title">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        A note before you read this
+      </div>
+      <div class="callout-body">
+        Phil, this document has been written for you personally — not for lawyers, not for accountants, just for you. It uses plain everyday language to explain what happened, step by step. We want you to understand the full picture so that nothing comes as a shock, and so that you can make informed decisions about what happens next.<br/><br/>
+        Everything in here is based on <strong>verified documents</strong> — your contracts, your company accounts, records from Companies House, and the official papers from Wincham's own client portal. <strong>Nothing has been guessed at.</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PART 1 — THE BASIC IDEA ═══ -->
+  <div class="sec-head" id="ownership">
+    <span class="sec-num">01</span>
+    <div class="sec-head-inner">
+      <h2>The Basic Idea — What Is a "Property Company"?</h2>
+      <p>To understand what happened, you first need to understand the concept Wincham sold to hundreds of people across the UK.</p>
+    </div>
+  </div>
+  <div class="sec-rule"></div>
+
+  <div class="prose" style="margin-bottom:28px">
+    <p>The idea sounds clever on paper. Instead of buying a Spanish holiday property directly in your own name, you buy it through a small UK limited company. The company owns the villa, and <em>you</em> own the company. On paper, it looks like this:</p>
+  </div>
+
+  <!-- Ownership chain diagram -->
+  <div class="chain">
+    <div class="chain-node azure-node">
+      <div class="chain-label">SHAREHOLDER</div>
+      <strong>YOU (Philip &amp; Beryl Harrison)</strong>
+    </div>
+    <div class="chain-arrow"></div>
+    <div class="chain-node gold-node">
+      <div class="chain-label">UK LIMITED COMPANY</div>
+      <strong>Los Romeros Limited</strong>
+      <div class="chain-label" style="margin-top:4px;font-size:.65rem">Company No. 06993349</div>
+    </div>
+    <div class="chain-arrow"></div>
+    <div class="chain-node neutral-node">
+      <div class="chain-label">SPANISH PROPERTY</div>
+      <strong>The Villa — Lanzarote</strong>
+      <div class="chain-label" style="margin-top:4px;font-size:.65rem">85 Shangrila Park, Playa Blanca</div>
+    </div>
+  </div>
+
+  <div class="callout callout-azure" style="margin-top:24px">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      Why the structure existed — and what it didn't tell you
+    </div>
+    <div class="callout-body">
+      Wincham told people this arrangement would save money on Spanish taxes — particularly a tax called ITP (similar to UK stamp duty) which you would normally pay when buying a property in Spain. Because you were technically buying <strong>shares in a UK company</strong> rather than buying a Spanish property directly, this tax didn't apply. That part is true.<br/><br/>
+      What Wincham didn't fully explain was the complication this would create later — particularly when it came to selling, and particularly when it came to a little accounting device called the <strong>Director's Loan Account</strong>.
+    </div>
+  </div>
+
+  <!-- ═══ PART 2 — THE BEGINNING ═══ -->
+  <div class="sec-head">
+    <span class="sec-num">02</span>
+    <div class="sec-head-inner">
+      <h2>The Beginning — Someone Else's Villa (2006)</h2>
+      <p>Before you were ever involved, this story starts in March 2006.</p>
+    </div>
+  </div>
+  <div class="sec-rule"></div>
+
+  <div class="callout callout-cyan">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      The original purchase — March 2006
+    </div>
+    <div class="callout-body">
+      A couple called <strong>Frederick and Margaret Purvis</strong> bought a villa at <strong>85 Shangrila Park, Playa Blanca, Lanzarote</strong> for <strong>€175,000</strong>. They bought it from a man called Owen Richard Hollywood (no connection to Wincham). This purchase was recorded officially by a Spanish notary, and the price — €175,000 — was stamped into the legal deed (called an <em>Escritura</em>).<br/><br/>
+      The Purvis family were closely connected to Wincham. Frederick and Margaret Purvis were among the first clients to put their property into the Wincham scheme structure.
+    </div>
+  </div>
+
+  <!-- ═══ PART 3 — SHELL COMPANY ═══ -->
+  <div class="sec-head">
+    <span class="sec-num gold">03</span>
+    <div class="sec-head-inner">
+      <h2>The Shell Company Is Created (2007–2010)</h2>
+      <p>In 2007 a small UK limited company was created. Then in 2010, something important — and suspicious — happened.</p>
+    </div>
+  </div>
+  <div class="sec-rule gold"></div>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-date">2007</div>
+        <div class="tl-title">Los Romeros Limited registered at Companies House</div>
+        <div class="tl-body">Company Number 06993349. No employees, no bank account, no real business activity. Its only purpose: to hold the Lanzarote villa.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot gold"></div>
+      <div class="tl-content">
+        <div class="tl-date gold">June 2010</div>
+        <div class="tl-title">Villa formally transferred into the company</div>
+        <div class="tl-body">The Purvis family transferred the villa from their own names into Los Romeros Limited via a Spanish legal deed. But here is the first serious problem.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot crimson"></div>
+      <div class="tl-content">
+        <div class="tl-date crimson">2010 — The Inflation</div>
+        <div class="tl-title">Villa value inflated by €56,164 on paper</div>
+        <div class="tl-body">The villa was bought in 2006 for <strong style="color:var(--text-primary)">€175,000</strong>. When transferred into the company in 2010, Wincham used a declared value of <strong style="color:#fca5a5">€231,164.73</strong> — an increase of <strong style="color:#fca5a5">€56,164</strong> with no independent valuation and no market evidence to support it.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-crimson">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      In plain English: the inflation
+    </div>
+    <div class="callout-body">
+      The villa was bought for <strong>€175,000</strong> in 2006. By 2010, Wincham had put it into the company at a declared value of <strong>€231,164.73</strong> — an increase of <strong>€56,164 on paper</strong>. There was no independent valuation to support this higher figure. The villa had not been improved. The market had not risen by that amount. <strong>The higher figure appears to have been chosen by Wincham.</strong>
+    </div>
+  </div>
+
+  <!-- Inflation metrics -->
+  <div class="metrics-grid">
+    <div class="metric-card azure">
+      <div class="mc-label">Original Purchase Price (2006)</div>
+      <span class="mc-value azure">€175,000</span>
+      <div class="mc-note">Confirmed by Spanish notary deed (Escritura). Owen Richard Hollywood, vendor.</div>
+    </div>
+    <div class="metric-card crimson">
+      <div class="mc-label">Wincham's Declared Value (2010)</div>
+      <span class="mc-value crimson">€231,165</span>
+      <div class="mc-note">Recorded in the Spanish transfer deed. No independent valuation obtained.</div>
+    </div>
+    <div class="metric-card gold">
+      <div class="mc-label">Paper Inflation — Unexplained</div>
+      <span class="mc-value gold">€56,164</span>
+      <div class="mc-note">Increase of 32% over purchase price with no justification identified in documents.</div>
+    </div>
+  </div>
+
+  <!-- ═══ PART 4 — THE DLA TRICK ═══ -->
+  <div class="sec-head">
+    <span class="sec-num gold">04</span>
+    <div class="sec-head-inner">
+      <h2>Why Would They Inflate the Value? The Director's Loan Trick</h2>
+      <p>This is the key question, and the answer explains the entire Wincham business model.</p>
+    </div>
+  </div>
+  <div class="sec-rule gold"></div>
+
+  <div class="prose" style="margin-bottom:24px">
+    <p>When a property goes into a company, the company needs to "pay" for it somehow. The way it works in law is that the property counts as the owner's <strong>investment</strong> into the company. In exchange for bringing the property in, the owner receives shares — or in this case, something called <strong>redeemable preference shares</strong>.</p>
+    <p>At the declared value of <strong>€231,164.73</strong>, the Purvis family received shares in the company worth that amount. This is how they were "paid" for the property going in.</p>
+  </div>
+
+  <div class="callout callout-gold">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+      In plain English: the redeemable share trick
+    </div>
+    <div class="callout-body">
+      Those preference shares were <strong>redeemable</strong> — meaning they could be cashed in, like a voucher. When the Purvis family later sold the company, those preference shares were redeemed (cashed in) and the money went <em>back to them</em>.<br/><br/>
+      By inflating the value from <strong>€175,000 to €231,164.73</strong>, the Purvis family received shares worth <strong>€56,164 more</strong> than the real purchase price. When those shares were redeemed, they collected that difference. It was as if they had written themselves a cheque for <strong>€56,164</strong> — money that came from the inflated paper value, not from anything real.
+    </div>
+  </div>
+
+  <!-- ═══ PART 5 — ANNUAL FEES ═══ -->
+  <div class="sec-head">
+    <span class="sec-num">05</span>
+    <div class="sec-head-inner">
+      <h2>The Annual Fees — Small Amounts, Big Numbers Over Time</h2>
+      <p>Every year, Wincham charged fees to manage Los Romeros Limited. The problem is not that they charged fees — it is how they were recorded and whether they were properly disclosed.</p>
+    </div>
+  </div>
+  <div class="sec-rule"></div>
+
+  <div class="prose" style="margin-bottom:24px">
+    <p>Because Los Romeros Limited had no bank account of its own, someone had to physically pay these bills. During the years you owned the company (December 2019 to March 2026), that person was <strong>you, Phil</strong>. You paid Wincham's invoices out of your own personal bank account. Every pound you paid should have been recorded as a debt the company owed back to you — this is called a <strong>Director's Loan Account</strong>.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table class="vtable">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Total Paid Over Your Ownership</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spanish fiscal representation</td>
+          <td class="td-azure">~£1,700</td>
+        </tr>
+        <tr>
+          <td>Registered office &amp; company secretarial</td>
+          <td class="td-azure">~£1,572</td>
+        </tr>
+        <tr>
+          <td>Annual accounts preparation</td>
+          <td class="td-azure">~£3,240</td>
+        </tr>
+        <tr>
+          <td>Certificate of Good Standing</td>
+          <td class="td-azure">£60</td>
+        </tr>
+        <tr class="td-total">
+          <td><strong>Total confirmed — additional years still to verify</strong></td>
+          <td class="td-azure"><strong>~£6,572</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-azure">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+      Your Director's Loan — This Is Your Money
+    </div>
+    <div class="callout-body">
+      There are also additional fees in years where records have not yet been confirmed. The total amount you are personally owed back by the company — money you paid out of your own pocket on the company's behalf — is estimated at approximately <strong>£25,069</strong>.<br/><br/>
+      This is your Director's Loan Account. It is your money. <strong>The company owes it to you.</strong>
+    </div>
+  </div>
+
+  <!-- ═══ PART 6 — WHAT IS A DLA ═══ -->
+  <div class="sec-head" id="dla">
+    <span class="sec-num">06</span>
+    <div class="sec-head-inner">
+      <h2>What Is a Director's Loan Account? (Explained Simply)</h2>
+      <p>A Director's Loan Account — usually shortened to DLA — is simply a running record of money that has passed between you and your company.</p>
+    </div>
+  </div>
+  <div class="sec-rule"></div>
+
+  <div class="callout callout-cyan" style="margin-bottom:16px">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Think of it like a tab at a pub
+    </div>
+    <div class="callout-body">
+      Every time the pub owes <em>you</em> money, the tab goes up. Every time you draw money out of the pub's till for yourself, the tab goes down. There are two types:
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-bottom:24px">
+    <div class="feature-card">
+      <div class="fc-icon cyan-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <div class="fc-title">Type 1 — The company owes YOU money (you are "in credit")</div>
+      <div class="fc-body">This happens when you've paid for something on the company's behalf out of your own pocket and haven't been reimbursed yet. The company records this as money it owes you. You can draw this back out at any time, <strong style="color:var(--text-primary)">completely tax-free</strong>. It is not income — it is simply the company repaying its own debt to you.</div>
+    </div>
+    <div class="feature-card crimson-card">
+      <div class="fc-icon crimson-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+      </div>
+      <div class="fc-title">Type 2 — YOU owe the company money (you are "overdrawn")</div>
+      <div class="fc-body">This happens if you take money out of the company for personal use without going through the proper channels. This can cause <strong style="color:#fca5a5">tax problems</strong> if not handled correctly.</div>
+    </div>
+  </div>
+
+  <div class="callout callout-cyan">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Your DLA (Phil's DLA) is Type 1
+    </div>
+    <div class="callout-body">
+      You paid <strong>£25,069</strong> of the company's bills out of your own money. The company owes you £25,069. It should have been repaid to you at the time the company sold the property. <strong>It was not.</strong>
+    </div>
+  </div>
+
+  <!-- ═══ PART 7 — INHERITED DLA ═══ -->
+  <div class="sec-head">
+    <span class="sec-num gold">07</span>
+    <div class="sec-head-inner">
+      <h2>The Other Director's Loan — Wincham's DLA (The One You Inherited)</h2>
+      <p>When you bought Los Romeros Limited in December 2019, the company already had its own Director's Loan Account — completely separate from yours.</p>
+    </div>
+  </div>
+  <div class="sec-rule gold"></div>
+
+  <div class="prose" style="margin-bottom:24px">
+    <p>This DLA showed that the company owed <strong>£37,652</strong> to whomever was its director at that time. This was described as money the outgoing director (from the Wincham side) had "loaned" to the company over the years to keep it running.</p>
+    <p>You were told, and you agreed in the purchase contract, that you would take on this existing £37,652 debt as part of buying the company. You did not receive this money — you simply agreed that the company would owe it to someone.</p>
+  </div>
+
+  <div class="callout callout-gold">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Here is where it gets suspicious
+    </div>
+    <div class="callout-body">
+      We believe — based on the evidence we have gathered — that this £37,652 DLA was not genuine money that someone had lent to the company in the normal sense. Instead, it appears to represent <strong>Wincham's accumulated management fees that had never actually been paid in cash</strong>. They had been recorded in the company's accounts as a loan, which allowed them to be extracted later, tax-free, rather than being paid as taxable income.<br/><br/>
+      <strong>In plain English:</strong> Instead of billing you directly for their fees (which would be straightforward), Wincham kept a running total of what they said the company "owed" them, recorded it as a Director's Loan, and then when the company was sold, they were able to draw out that money as a loan repayment — which is <strong>not taxable</strong> — rather than as income — which <strong>is</strong>.
+    </div>
+  </div>
+
+  <!-- ═══ PART 8 — HOW THE TWO DLAS CONNECT ═══ -->
+  <div class="sec-head">
+    <span class="sec-num">08</span>
+    <div class="sec-head-inner">
+      <h2>How the Two DLAs Are Connected — Why It Matters</h2>
+      <p>So when you bought the company, there were effectively two financial obligations running in parallel.</p>
+    </div>
+  </div>
+  <div class="sec-rule"></div>
+
+  <div class="table-wrap">
+    <table class="vtable">
+      <thead>
+        <tr>
+          <th>DLA</th>
+          <th>Amount</th>
+          <th>What It Is</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>The inherited DLA (Wincham's)</strong></td>
+          <td class="td-gold"><strong>£37,652</strong></td>
+          <td>A debt the company supposedly owed to the outgoing Wincham-connected director. You took this on when you bought the company.</td>
+        </tr>
+        <tr>
+          <td><strong>Your DLA (Phil's)</strong></td>
+          <td class="td-azure"><strong>£25,069</strong></td>
+          <td>A debt the company owes <em>to you</em> — money you personally paid for company expenses out of your own pocket during your ownership.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DLA Comparison visual -->
+  <div class="dla-diagram">
+    <div class="dla-box highlight-gold">
+      <div class="dla-box-label">Wincham's Inherited DLA</div>
+      <div class="dla-box-value gold">£37,652</div>
+      <div class="chain-label" style="margin-top:8px;font-size:.68rem">You took on this debt<br/>at purchase — Dec 2019</div>
+    </div>
+    <div class="dla-arrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      <span style="font-size:.65rem;color:var(--text-muted);text-align:center">Separate<br/>obligations</span>
+    </div>
+    <div class="dla-box highlight-azure">
+      <div class="dla-box-label">Phil's Personal DLA</div>
+      <div class="dla-box-value azure">£25,069</div>
+      <div class="chain-label" style="margin-top:8px;font-size:.68rem">Company owes this<br/>back to you — unpaid</div>
+    </div>
+  </div>
+
+  <div class="callout callout-crimson">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+      The key point — your £25,069 was not repaid at completion
+    </div>
+    <div class="callout-body">
+      At the time of sale in March 2026, the company had accumulated enough value through the property sale to repay both of them. Your <strong>£25,069</strong> should have come back to you at completion. According to the completion paperwork and your bank records, <strong>it did not. That money is still outstanding.</strong>
+    </div>
+  </div>
+
+  <!-- ═══ PART 9 — THE 2019 PURCHASE ═══ -->
+  <div class="sec-head" id="sale">
+    <span class="sec-num crimson">09</span>
+    <div class="sec-head-inner">
+      <h2>The 2019 Purchase — Where Things Went Wrong for You</h2>
+      <p>In December 2019, you and Beryl completed the purchase of Los Romeros Limited from Kevin and Mary Stockwell.</p>
+    </div>
+  </div>
+  <div class="sec-rule crimson"></div>
+
+  <div class="prose" style="margin-bottom:24px">
+    <p>The purchase price was <strong>€185,000</strong> for the company shares — which effectively meant you were buying the villa for €185,000. There is an important problem with how this transaction was handled.</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="feature-card crimson-card">
+      <div class="fc-icon crimson-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="fc-title">Dual Agency — Mark Roach of Wincham</div>
+      <div class="fc-body">The same person — <strong style="color:var(--text-primary)">Mark Roach of Wincham</strong> — acted for both sides of the deal. He was the agent helping the Stockwells <em>sell</em> their shares. He was also the agent helping <em>you buy</em> them. He was also a <strong style="color:var(--text-primary)">director of Los Romeros Limited itself</strong> at the time. In legal terms, this is called <strong>dual agency</strong> and it creates a serious conflict of interest. You should have been told about this conflict. You should have been given independent advice. There is no evidence that either of these things happened.</div>
+    </div>
+    <div class="feature-card gold-card">
+      <div class="fc-icon gold-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      </div>
+      <div class="fc-title">Spanish Contract, UK Bank Account</div>
+      <div class="fc-body">The contract you signed was with <strong style="color:var(--text-primary)">Wincham Spanish Services SL</strong> (Wincham's Spanish company). But when the bills came in, they were sent by <strong style="color:var(--text-primary)">Wincham International Limited</strong> (the UK company in Congleton, Cheshire). You paid those bills, in pounds, to a UK bank account. The Spanish company — whose name was on your contract — received nothing. This matters because it affects your legal rights and also meant that certain costs could not be deducted from your Spanish tax bill.</div>
+    </div>
+  </div>
+
+  <!-- ═══ PART 10 — THE SALE 2026 ═══ -->
+  <div class="sec-head">
+    <span class="sec-num">10</span>
+    <div class="sec-head-inner">
+      <h2>The Sale — What Happened in March 2026</h2>
+      <p>In March 2026, Los Romeros Limited sold the Lanzarote villa for €315,000.</p>
+    </div>
+  </div>
+  <div class="sec-rule"></div>
+
+  <div class="metrics-grid">
+    <div class="metric-card azure">
+      <div class="mc-label">Sale Price (Spain)</div>
+      <span class="mc-value azure">€315,000</span>
+      <div class="mc-note">March 2026 · 85 Shangrila Park, Playa Blanca, Lanzarote</div>
+    </div>
+    <div class="metric-card gold">
+      <div class="mc-label">Net Remitted from Spain</div>
+      <span class="mc-value gold">€293,415</span>
+      <div class="mc-note">After Spanish agent fees, Plusvalía, notary, 3% tax deposit deducted</div>
+    </div>
+    <div class="metric-card azure">
+      <div class="mc-label">Amount Received (GBP)</div>
+      <span class="mc-value azure">£247,730</span>
+      <div class="mc-note">Converted by Wincham and deposited to your UK personal account</div>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-bottom:20px">
+    <p>On the face of it, that sounds like a satisfactory result. But there are several things that should have happened that didn't:</p>
+  </div>
+
+  <div class="callout callout-crimson" style="margin-bottom:14px">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      1 — Your £25,069 Director's Loan was not repaid at completion
+    </div>
+    <div class="callout-body">You are still owed this money by the company. Wincham handled the completion. This is an unexplained failure.</div>
+  </div>
+
+  <div class="callout callout-gold" style="margin-bottom:14px">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      2 — The company still has UK Corporation Tax obligations
+    </div>
+    <div class="callout-body">Los Romeros Limited must file a UK Corporation Tax return covering the profit made on the sale. This will result in a tax bill — estimated at around <strong>£9,000 net</strong> after claiming credit for Spanish tax already paid. This bill belongs to the company, not to you personally, but since all the company's money is now in your account, <strong>you will need to set this amount aside.</strong></div>
+  </div>
+
+  <div class="callout callout-crimson">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      3 — Spain is still owed money — deadline 20 July 2026
+    </div>
+    <div class="callout-body">A 3% tax deposit of €9,450 was held back by the Spanish buyers as security. The actual Spanish tax owed on the sale is approximately <strong>€13,569</strong> (19% of the gain). After crediting the €9,450 deposit, there is a balance of approximately <strong>€4,119 still owed to the Spanish tax authority</strong>. This must be paid by <strong>20 July 2026</strong> or penalties will begin to accrue.</div>
+  </div>
+
+  <!-- ═══ PART 11 — WHAT WINCHAM DID WRONG ═══ -->
+  <div class="sec-head" id="failures">
+    <span class="sec-num crimson">11</span>
+    <div class="sec-head-inner">
+      <h2>What Wincham Did Wrong — In Plain English</h2>
+      <p>A summary of the main things we believe Wincham got wrong, and what we intend to ask them to account for.</p>
+    </div>
+  </div>
+  <div class="sec-rule crimson"></div>
+
+  <div class="grid-2" style="gap:16px">
+
+    <div class="feature-card crimson-card">
+      <div class="fc-icon crimson-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="fc-title">1. They inflated the value of your property</div>
+      <div class="fc-body">They recorded the villa as being worth €231,164 when the real purchase price was €175,000. This created a false picture of the company's value.</div>
+    </div>
+
+    <div class="feature-card crimson-card">
+      <div class="fc-icon crimson-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="fc-title">2. They acted for both buyer and seller without telling you</div>
+      <div class="fc-body">Mark Roach represented both sides of the 2019 transaction. This is a fundamental conflict of interest. You should have had your own independent adviser.</div>
+    </div>
+
+    <div class="feature-card gold-card">
+      <div class="fc-icon gold-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      </div>
+      <div class="fc-title">3. Spanish contract, UK bank account</div>
+      <div class="fc-body">Your legal agreement was with their Spanish business. The money went to their UK business. These are different legal entities. You may not have received what you were entitled to from the Spanish entity, and you lost certain tax deductions as a result.</div>
+    </div>
+
+    <div class="feature-card gold-card">
+      <div class="fc-icon gold-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <div class="fc-title">4. They failed to advise you on tax consequences</div>
+      <div class="fc-body">Nobody properly explained to you that selling the company's Spanish property would result in both Spanish tax (to be paid within 4 months) and UK Corporation Tax (to be paid within 9 months). You were left to find this out for yourself.</div>
+    </div>
+
+    <div class="feature-card crimson-card">
+      <div class="fc-icon crimson-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="fc-title">5. They did not repay your personal Director's Loan at completion</div>
+      <div class="fc-body">You paid <strong style="color:var(--text-primary)">£25,069</strong> of the company's bills out of your own money over the years you owned it. That £25,069 is owed back to you by the company. It was not repaid when the property sold. Wincham handled the completion. This is an unexplained failure.</div>
+    </div>
+
+    <div class="feature-card gold-card">
+      <div class="fc-icon gold-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <div class="fc-title">6. They may have loaded the company with a £37,652 debt you unknowingly took on</div>
+      <div class="fc-body">The Director's Loan you inherited — <strong style="color:#FCD34D">£37,652</strong> — requires further investigation to determine whether it represented genuine money lent to the company, or whether it was a mechanism to extract Wincham's own fees tax-efficiently before passing the liability on to you.</div>
+    </div>
+
+  </div>
+
+  <!-- ═══ PART 12 — WHAT HAPPENS NEXT ═══ -->
+  <div class="sec-head" id="next-steps">
+    <span class="sec-num cyan">12</span>
+    <div class="sec-head-inner">
+      <h2>What Happens Next — The Simple Version</h2>
+      <p>Here is what needs to happen, in the order it needs to happen.</p>
+    </div>
+  </div>
+  <div class="sec-rule cyan"></div>
+
+  <div class="action-card">
+    <div class="action-num urgent">1</div>
+    <div class="action-body">
+      <div class="action-title">File the Spanish Tax Return (Modelo 210)</div>
+      <div class="action-detail">A specialist Spanish tax adviser needs to be instructed to file the Spanish tax return and arrange payment of the approximately <strong>€4,119 balance</strong> owed to Spain. Missing this deadline will result in penalties and interest on top.</div>
+      <span class="action-deadline deadline-urgent">⚡ Urgent — Before 20 July 2026</span>
+    </div>
+  </div>
+
+  <div class="action-card">
+    <div class="action-num near">2</div>
+    <div class="action-body">
+      <div class="action-title">Complete the UK Corporation Tax Return (CT600)</div>
+      <div class="action-detail">A UK accountant needs to complete Los Romeros Limited's final Corporation Tax return. You will need to set aside approximately <strong>£9,000</strong> from the £247,730 you have received to fund this payment.</div>
+      <span class="action-deadline deadline-near">⏱ Within the next few weeks</span>
+    </div>
+  </div>
+
+  <div class="action-card">
+    <div class="action-num near">3</div>
+    <div class="action-body">
+      <div class="action-title">Take Tax Advice Before Spending the Rest</div>
+      <div class="action-detail">You should take advice from a UK tax specialist about the best way to receive the remaining money from the company. There is a legal route — called a <strong>Members' Voluntary Liquidation</strong> — that could significantly reduce the tax you pay on the money you receive. Getting this right could save you a substantial sum.</div>
+      <span class="action-deadline deadline-near">⏱ Before you spend the remaining funds</span>
+    </div>
+  </div>
+
+  <div class="action-card">
+    <div class="action-num plan">4</div>
+    <div class="action-body">
+      <div class="action-title">Formal Legal Claim Against Wincham</div>
+      <div class="action-detail">We are building a formal evidence bundle covering all the issues described in this document. The goal is to recover, through legal proceedings if necessary, the losses caused by Wincham's failures — including the <strong>£25,069</strong> still owed to you, costs wrongly charged, and compensation for the tax advice failures. A commercial litigation solicitor will be instructed with the full evidence bundle.</div>
+      <span class="action-deadline deadline-plan">📋 In progress — evidence bundle being compiled</span>
+    </div>
+  </div>
+
+  <!-- ═══ CLOSING WORD ═══ -->
+  <div class="callout callout-cyan" style="margin-top:56px">
+    <div class="callout-title">
+      <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      A Final Word
+    </div>
+    <div class="callout-body">
+      Phil, none of what has happened to you is your fault. You were presented with a scheme that sounded sensible, by people who appeared to be professionals, and you trusted them to act in your best interests. That trust appears to have been misplaced.<br/><br/>
+      The encouraging news is that <strong>the evidence is strong, the paper trail is clear</strong>, and the amounts involved are significant enough to warrant serious legal action.<br/><br/>
+      You are not alone in this. Dean and the Velyon Legal Command Centre are working through every document, every invoice, and every entry in the company accounts to make sure nothing is missed.
+    </div>
+  </div>
+
+</div><!-- /wrap -->
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="f-brand">
+    <span class="v-blue">VEL</span><span class="v-cyan">YON</span> &nbsp;·&nbsp; Legal Command Centre
+  </div>
+  <p>Los Romeros Limited — Harrison vs Wincham Case Files &nbsp;·&nbsp; Company No. 06993349</p>
+  <p>Document Reference: V-LRC-PH-001 &nbsp;·&nbsp; Version 1.0 &nbsp;·&nbsp; April 2026</p>
+  <div class="priv-notice">
+    <em>This document is private and confidential. It has been prepared in contemplation of legal proceedings and is protected by litigation privilege. It should not be shared with Wincham International, Wincham Consultants, Adrem Accounting, or any of their representatives without prior legal advice.</em>
+  </div>
+</footer>
+
+<script>
+/* ── Image Picker ── */
+function setHero(thumb, src){
+  document.getElementById('hero-bg').src = src;
+  document.querySelectorAll('.img-thumb').forEach(el => el.classList.remove('active'));
+  thumb.classList.add('active');
+}
+
+/* ── Mobile Nav Hamburger ── */
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('nav-links');
+function closeNav(){
+  navLinks.classList.remove('open');
+  navToggle.classList.remove('active');
+  navToggle.setAttribute('aria-expanded','false');
+}
+navToggle && navToggle.addEventListener('click',()=>{
+  const isOpen = navLinks.classList.toggle('open');
+  navToggle.classList.toggle('active', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+/* Close nav on outside click */
+document.addEventListener('click',(e)=>{
+  if(!e.target.closest('nav')) closeNav();
+});
+
+/* ── Intersection Observer fade-in for below-fold sections ── */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.1});
+
+document.querySelectorAll('.metric-card,.feature-card,.callout,.action-card,.tl-item,.chain-node').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(18px)';
+  el.style.transition='opacity 0.55s ease, transform 0.55s ease';
+  io.observe(el);
+});
+</script>
+
+</body>
+</html>
