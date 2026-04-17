@@ -577,11 +577,68 @@ nav{
 .callout-icon{width:17px;height:17px;flex-shrink:0}
 
 /* ── TABLES ───────────────────────────────────────────────────────── */
+/* Outer scroll wrapper — holds top-bar + table together */
+.table-scroll-outer{position:relative;width:100%;margin-bottom:24px}
+/* Top mirror scrollbar */
+.table-scroll-top{
+  overflow-x:auto;overflow-y:hidden;
+  height:8px;
+  border-radius:4px 4px 0 0;
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--border);border-bottom:none;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(96,165,250,0.6) rgba(255,255,255,0.05);
+}
+.table-scroll-top::-webkit-scrollbar{height:6px}
+.table-scroll-top::-webkit-scrollbar-track{background:rgba(255,255,255,0.04)}
+.table-scroll-top::-webkit-scrollbar-thumb{background:rgba(96,165,250,0.6);border-radius:3px}
+.table-scroll-top-inner{height:1px;display:block} /* width set by JS */
+/* Swipe hint strip */
+.swipe-hint{
+  display:flex;align-items:center;gap:8px;
+  padding:7px 14px;
+  background:rgba(96,165,250,0.08);
+  border:1px solid rgba(96,165,250,0.22);border-bottom:none;
+  border-radius:10px 10px 0 0;
+  font-size:.72rem;font-family:'Space Grotesk',sans-serif;
+  letter-spacing:.05em;color:#93c5fd;
+  transition:opacity 0.4s ease;
+  user-select:none;
+}
+.swipe-hint.hidden{opacity:0;pointer-events:none;height:0;padding:0;border:none;overflow:hidden}
+.swipe-hint-icon{font-size:1rem;animation:swipe-nudge 1.8s ease-in-out infinite}
+@keyframes swipe-nudge{
+  0%,100%{transform:translateX(0)}
+  45%{transform:translateX(7px)}
+  65%{transform:translateX(-3px)}
+}
+/* Hide on tablet+ */
+@media(min-width:640px){
+  .swipe-hint{display:none}
+  .table-scroll-top{display:none}
+}
+/* Table wrapper itself */
 .table-wrap{
-  width:100%;border-radius:var(--r);
-  border:1px solid var(--border);
-  overflow:hidden;margin-bottom:24px;
+  width:100%;
+  border-radius:0 0 var(--r) var(--r);
+  border:1px solid var(--border);border-top:none;
+  overflow:hidden;
   overflow-x:auto;
+  /* Right-side fade to signal more content */
+  -webkit-mask-image:linear-gradient(to right,black 75%,transparent 100%);
+  mask-image:linear-gradient(to right,black 75%,transparent 100%);
+  transition:mask-image 0.3s,-webkit-mask-image 0.3s;
+}
+.table-wrap.fully-scrolled{
+  -webkit-mask-image:none;
+  mask-image:none;
+}
+@media(min-width:640px){
+  .table-wrap{
+    border-radius:var(--r);
+    border-top:1px solid var(--border);
+    -webkit-mask-image:none;mask-image:none;
+  }
 }
 /* ── vtable — mobile-first card stack ── */
 .vtable-cards{display:flex;flex-direction:column;gap:12px;padding:4px 0}
@@ -1793,6 +1850,54 @@ document.querySelectorAll('.metric-card,.feature-card,.callout,.action-card,.tl-
   el.style.transform='translateY(18px)';
   el.style.transition='opacity 0.55s ease, transform 0.55s ease';
   io.observe(el);
+});
+
+/* ── Swipe hint + mirrored top scrollbar for every .table-wrap ── */
+document.querySelectorAll('.table-wrap').forEach(wrap => {
+  // Only apply on mobile (skip if screen is wide enough to show full table)
+  const isMobile = () => window.innerWidth < 640;
+
+  // Create outer wrapper
+  const outer = document.createElement('div');
+  outer.className = 'table-scroll-outer';
+  wrap.parentNode.insertBefore(outer, wrap);
+
+  // Swipe hint
+  const hint = document.createElement('div');
+  hint.className = 'swipe-hint';
+  hint.innerHTML = '<span class="swipe-hint-icon">👆</span><span>Swipe left to see amounts &nbsp;→</span>';
+  outer.appendChild(hint);
+
+  // Top mirror scrollbar
+  const topBar = document.createElement('div');
+  topBar.className = 'table-scroll-top';
+  const topInner = document.createElement('span');
+  topInner.className = 'table-scroll-top-inner';
+  topBar.appendChild(topInner);
+  outer.appendChild(topBar);
+
+  // Move table into outer
+  outer.appendChild(wrap);
+
+  // Set top inner width to match table scroll width
+  function syncWidth() {
+    topInner.style.width = wrap.scrollWidth + 'px';
+  }
+  syncWidth();
+  window.addEventListener('resize', syncWidth);
+
+  // Sync scroll: top → table
+  topBar.addEventListener('scroll', () => {
+    wrap.scrollLeft = topBar.scrollLeft;
+  }, {passive:true});
+
+  // Sync scroll: table → top + hide hint + remove fade
+  wrap.addEventListener('scroll', () => {
+    topBar.scrollLeft = wrap.scrollLeft;
+    if(wrap.scrollLeft > 20) hint.classList.add('hidden');
+    const atEnd = wrap.scrollLeft + wrap.clientWidth >= wrap.scrollWidth - 4;
+    wrap.classList.toggle('fully-scrolled', atEnd);
+  }, {passive:true});
 });
 </script>
 
